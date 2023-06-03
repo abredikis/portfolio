@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+@mixin breakpoint($width: $xl) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin container-padding-x() {
+    padding-left: $container-padding-mobile;
+    padding-right: $container-padding-mobile;
+
+    @include breakpoint() {
+        padding-left: $container-padding-desktop;
+        padding-right: $container-padding-desktop;
+    }
+}
+
+// Calculates max-width based on container padding variables
+@mixin container-max-width($width) {
+    max-width: calc(#{$width} + #{$container-padding-mobile} + #{$container-padding-mobile});
+
+    @include breakpoint($xl) {
+        max-width: calc(#{$width} + #{$container-padding-desktop} + #{$container-padding-desktop});
+    }
+}

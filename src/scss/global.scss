@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+:root {
+    --clr-primary: #{$color-primary};
+    --clr-primary-active: #{$color-primary-active};
+
+    --clr-primary-alt: #{$color-primary-alternate};
+    --clr-primary-alt-active: #{$color-primary-alternate-active};
+
+    --clr-secondary: #{$color-secondary};
+    --clr-secondary-active: #{$color-secondary-active};
+
+    --clr-secondary-alt: #{$color-secondary-alternate};
+    --clr-secondary-alt-active: #{$color-secondary-alternate-active};
+
+    --clr-accent: #{$color-accent};
+    --clr-accent-active: #{$color-accent-active};
+
+    --clr-text-primary: #{$color-secondary-alternate};
+    --clr-text-secondary: #{$color-secondary-alternate};
+
+    --clr-text-primary-transparent: adjust-color($color-primary-alternate, $alpha: 0.7);
+
+    --clr-text-secondary-transparent: adjust-color($color-secondary-alternate, $alpha: 0.7);
+}
+
+html {
+    background-color: var(--clr-primary);
+    color: var(--clr-text-secondary);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    // main {
+    // height: auto;
+    // flex-grow: 1;
+    // }
+}

@@ -1,0 +1,36 @@
+// Colors
+
+$active-threshhold: 3%;
+
+$color-primary: hsla(0, 0%, 5%, 100%);
+$color-primary-active: lighten($color-primary, $active-threshhold);
+
+$color-primary-alternate: hsla(0, 0%, 9%, 100%);
+$color-primary-alternate-active: lighten($color-primary-alternate, $active-threshhold);
+
+$color-secondary: hsla(0, 0%, 100%, 100%);
+$color-secondary-active: lighten($color-secondary, $active-threshhold);
+
+$color-secondary-alternate: hsla(0, 0%, 100%, 100%);
+$color-secondary-alternate-active: lighten($color-secondary-alternate, $active-threshhold);
+
+$color-accent: hsla(241, 84%, 57%, 100%);
+$color-accent-active: lighten($color-accent, $active-threshhold);
+
+// Breakpoints
+
+// Breakpoints
+$qhd: 1920px;
+$fhd: 1680px;
+$xxl: 1400px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 428px;
+
+// Layout
+
+$container-padding-mobile: 22px;
+$container-padding-desktop: 100px;
+
+$border-radius: 4px;

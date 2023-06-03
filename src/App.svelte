@@ -1,14 +1,5 @@
 <script lang="ts">
-    import "./styles/reset.scss";
+    import Hero from "./components/blocks/Hero.svelte";
 </script>
 
-<main />
-
-<style lang="scss">
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        min-height: 100svh;
-    }
-</style>
+<Hero />
